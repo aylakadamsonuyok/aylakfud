@@ -4,6 +4,7 @@ from tkinter import filedialog
 import base64
 from cryptography.fernet import Fernet
 import random
+import re
 
 filectx = ""
 
@@ -19,6 +20,10 @@ def select_file():
         except Exception as e:
             print(f"Dosya okunurken hata oluştu: {e}")
 
+def extract_imports(file_content):
+    imports = re.findall(r"^(import .*|from .* import .*)$", file_content, re.MULTILINE)
+    return "\n".join(imports)
+
 def button_event():
     if filectx: 
         base64ed = base64.b64encode(filectx.encode('utf-8')).decode('utf-8')
@@ -30,8 +35,11 @@ def button_event():
 
         yazmakicinkey = key.decode('utf-8')
 
+        imports = extract_imports(filectx)
+
         with open("obfuscated_code.py", "w") as obf:
-            obf.write(f"""
+            obf.write(f"""{imports}
+
 import base64
 from cryptography.fernet import Fernet
 
@@ -51,8 +59,8 @@ exec(original_data)
 
 root = ctk.CTk()
 root.geometry("400x120")
-builder.title("AylakFUD")
-builder.iconbitmap(r"util\favicon.ico")
+root.title("AylakFUD")
+root.iconbitmap(r"util\favicon.ico")
 
 select_button = ctk.CTkButton(root, text="Dosya Seç", command=select_file)
 select_button.place(x=10, y=10)
