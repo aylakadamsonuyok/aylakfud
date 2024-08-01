@@ -2,8 +2,8 @@
 
 Türk FUDlardan biri, virustotalde 17/60'dan 0/66'ya döndürdüm. 
 
-FUDsuz : https://www.virustotal.com/gui/file/bc5af3737991a0a0449c7ff4e12751f4ef36d31d12d15cba6879001fce05d65c
-FUDlu : https://www.virustotal.com/gui/file/4b46090e24a475b5a63ed82b0374f4631bdb62b4512b10e030dc0a11d8533ce0?nocache=1
+FUDsuz : https://www.virustotal.com/gui/file/bc5af3737991a0a0449c7ff4e12751f4ef36d31d12d15cba6879001fce05d65c (17/60)
+FUDlu : https://www.virustotal.com/gui/file/4b46090e24a475b5a63ed82b0374f4631bdb62b4512b10e030dc0a11d8533ce0?nocache=1 (0/66)
 
 ##PyInstaller İle:
 
