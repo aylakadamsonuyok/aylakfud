@@ -28,3 +28,7 @@ Bunu kullanmanızı pek tavsiye etmem, gördüğünüz gibi pyinstallerda sıçt
 # İletişim 
 
 Bana gaydede31@gmail.com (makarasına açmıştım şimdi ciddi yerlerde kullanıyorum affedin) dan ulaşabilirsiniz. Bug vesayre olur büyük ihtimalle belirtirseniz çok sevinirim.
+
+# Uyarı 
+
+Kodu yapma amacım kendimi geliştirmek, ben NMS hocamın kodlarını inceledim ve kendim en baştan başka şekilde yazdım. Fikir %99 NMSin. Eğer python crypter lazımsa sizi NMSFUD 3.5'a davet ediyorum.
